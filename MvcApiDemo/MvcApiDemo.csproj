@@ -60,6 +60,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -183,11 +184,13 @@
     <Compile Include="Base\BaseAPIController.cs" />
     <Compile Include="Base\CustomAuthAttribute.cs" />
     <Compile Include="Base\CustomFilter.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\SystemUserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DB\RedisHelper.cs" />
+    <Compile Include="Entity\ResultBaseEntity.cs" />
     <Compile Include="Entity\ResultEntity.cs" />
+    <Compile Include="Entity\SysUserLoginEntity.cs" />
+    <Compile Include="Entity\UserScore.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

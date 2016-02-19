@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MvcApiDemo.Models
 {
-    public class Student
+    public class Student 
     {
         public string Name
         {
@@ -20,6 +20,12 @@ namespace MvcApiDemo.Models
         }
 
         public string ClassName
+        {
+            get;
+            set;
+        }
+
+        public string PassWord
         {
             get;
             set;
