@@ -8,9 +8,9 @@ namespace MvcApiDemo.Controllers
     //用户登陆接口
     public class SystemUserController : ApiController
     {
-        public List<Student> Inilist = new List<Student> { new Student() {Name="张三",ClassName="语文",Score=100 },
-                                       new Student() {Name="李四",ClassName="语文",Score=90 },
-                                       new Student() {Name="王五",ClassName="数学",Score=100 },
+        public List<Student> Inilist = new List<Student> { new Student() {Name="张三",ClassName="语文",Score=100,PassWord="123456" },
+                                       new Student() {Name="李四",ClassName="语文",Score=90,PassWord="123456" },
+                                       new Student() {Name="王五",ClassName="数学",Score=100,PassWord="123456" },
                                        };
 
         [HttpPost]
