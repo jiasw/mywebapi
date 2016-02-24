@@ -181,9 +181,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Base\BaseAPIController.cs" />
-    <Compile Include="Base\CustomAuthAttribute.cs" />
-    <Compile Include="Base\CustomFilter.cs" />
+    <Compile Include="BaseFilter\BaseAPIController.cs" />
+    <Compile Include="BaseFilter\CustomAuthAttribute.cs" />
+    <Compile Include="BaseFilter\CustomFilter.cs" />
     <Compile Include="Controllers\SystemUserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DB\RedisHelper.cs" />

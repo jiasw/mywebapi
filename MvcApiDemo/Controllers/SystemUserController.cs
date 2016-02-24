@@ -16,7 +16,7 @@ namespace MvcApiDemo.Controllers
         [HttpPost]
         public UserScore  Login([FromBody]SysUserLoginEntity user)
         {
-            List<Student> listresult= Inilist.FindAll(n => n.Name == user.UserName );
+            List<Student> listresult = Inilist.FindAll(n => n.Name == user.UserName && n.PassWord == user.PassWord);
             UserScore result = new UserScore() {ErrorCode=-1,IsSuccess=false };
             foreach (var item in listresult)
             {
@@ -50,8 +50,9 @@ namespace MvcApiDemo.Controllers
         }
 
         // DELETE api/systemuser/5
-        public void Delete(int id)
+        public void Delete(string id)
         {
+            Inilist.RemoveAll(n => n.Name == id);
         }
     }
 }
