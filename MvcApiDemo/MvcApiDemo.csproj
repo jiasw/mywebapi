@@ -187,10 +187,10 @@
     <Compile Include="Controllers\SystemUserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DB\RedisHelper.cs" />
-    <Compile Include="Entity\ResultBaseEntity.cs" />
-    <Compile Include="Entity\ResultEntity.cs" />
-    <Compile Include="Entity\SysUserLoginEntity.cs" />
-    <Compile Include="Entity\UserScore.cs" />
+    <Compile Include="ResultEntity\ResultBaseEntity.cs" />
+    <Compile Include="ResultEntity\ResultEntity.cs" />
+    <Compile Include="QueryEntity\SysUserLoginEntity.cs" />
+    <Compile Include="ResultEntity\UserScore.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

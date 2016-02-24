@@ -10,10 +10,17 @@ namespace MvcApiDemo
         public static void Register(HttpConfiguration config)
         {
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",
+                name: "WithoutActionApi",
                 routeTemplate: "testapi/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
+                );
+
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "testapi/{controller}/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional }
             );
+
 
             // 取消注释下面的代码行可对具有 IQueryable 或 IQueryable<T> 返回类型的操作启用查询支持。
             // 若要避免处理意外查询或恶意查询，请使用 QueryableAttribute 上的验证设置来验证传入查询。

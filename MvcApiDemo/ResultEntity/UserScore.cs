@@ -7,12 +7,11 @@ using System.Web;
 namespace MvcApiDemo.Entity
 {
     [DataContract]
-    public class SysUserLoginEntity
+    public class UserScore : ResultBaseEntity
     {
         [DataMember]
-        public string UserName { get; set; }
-        [DataMember]
-        public string PassWord { get; set; }
-
+        public string Username { get; set; }
+       [DataMember]
+        public string Score { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace MvcApiDemo
             
             routes.MapRoute(
                 name: "Default",
-                url: "ces/{controller}/{action}/{id}",
+                url: "testapi/{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }

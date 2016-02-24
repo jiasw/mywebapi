@@ -14,9 +14,9 @@ namespace MvcApiDemo.Controllers
                                        };
 
         [HttpPost]
-        public UserScore  Login(SysUserLoginEntity user)
+        public UserScore  Login([FromBody]SysUserLoginEntity user)
         {
-            List<Student> listresult= Inilist.FindAll(n => n.Name == user.UserName && n.PassWord == user.PassWord);
+            List<Student> listresult= Inilist.FindAll(n => n.Name == user.UserName );
             UserScore result = new UserScore() {ErrorCode=-1,IsSuccess=false };
             foreach (var item in listresult)
             {
